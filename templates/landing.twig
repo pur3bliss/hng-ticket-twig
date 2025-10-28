@@ -1,0 +1,26 @@
+{% extends "base.twig" %}
+{% block title %}TicketApp — Home{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <div class="hero-content">
+    <h1>Ticket Management App</h1>
+    <p>Fast, simple ticket tracking with accessible UI and clear workflows.</p>
+    <div class="buttons">
+      <a class="btn btn-primary" href="?page=login">Login</a>
+      <a class="btn btn-outline" href="?page=signup">Get Started</a>
+    </div>
+  </div>
+
+  <div class="circle-deco" aria-hidden="true"></div>
+  <svg class="wave" viewBox="0 0 1440 150" preserveAspectRatio="none" aria-hidden="true">
+    <path fill="#ffffff" d="M0,40 C200,140 500,10 720,40 C940,70 1240,10 1440,60 L1440 150 L0 150 Z"></path>
+  </svg>
+</section>
+
+<section class="grid grid-3" aria-labelledby="features-heading" style="margin-top:24px">
+  <div class="card"><h3>Fast ticket lists</h3><p>Cards, filters and status tags to keep work visible.</p></div>
+  <div class="card"><h3>Status tracking</h3><p>Open, in_progress, closed — clear status colors.</p></div>
+  <div class="card"><h3>Accessible</h3><p>Keyboard focusable, semantic markup and ARIA where needed.</p></div>
+</section>
+{% endblock %}

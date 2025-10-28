@@ -1,0 +1,34 @@
+{% extends "base.twig" %}
+{% block title %}Tickets — TicketApp{% endblock %}
+
+{% block content %}
+<section style="margin-top:24px">
+  <h2>Tickets</h2>
+
+  <form id="ticketForm" class="card" aria-label="Create ticket form">
+    <div class="form-row">
+      <label for="title">Title</label>
+      <input id="title" name="title" />
+    </div>
+
+    <div class="form-row">
+      <label for="status">Status</label>
+      <select id="status" name="status">
+        <option value="">Select</option>
+        <option value="open">open</option>
+        <option value="in_progress">in_progress</option>
+        <option value="closed">closed</option>
+      </select>
+    </div>
+
+    <div class="form-row">
+      <label for="description">Description</label>
+      <textarea id="description" name="description"></textarea>
+    </div>
+
+    <button class="btn btn-primary-action" type="submit">Add Ticket</button>
+  </form>
+
+  <div id="ticketList" style="margin-top:16px"></div>
+</section>
+{% endblock %}

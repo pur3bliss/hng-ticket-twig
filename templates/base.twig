@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{% block title %}TicketApp{% endblock %}</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="header-nav" role="navigation" aria-label="Main Navigation">
+      <div class="header-inner">
+        <a class="brand" href="?page=landing">TicketApp</a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="?page=dashboard" class="nav-link">Dashboard</a>
+          <a href="?page=tickets" class="nav-link">Tickets</a>
+          <a href="?page=login" id="nav-login" class="nav-link">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+      <div>© 2025 TicketApp — Built with Twig</div>
+    </footer>
+  </div>
+
+  <script src="/assets/script.js"></script>
+</body>
+</html>
